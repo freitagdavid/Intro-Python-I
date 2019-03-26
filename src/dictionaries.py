@@ -20,12 +20,12 @@ waypoints = [
         "lat": 43,
         "lon": -121,
         "name": "a place"
-    }, 
+    },
     {
         "lat": 41,
         "lon": -123,
         "name": "another place"
-    }, 
+    },
     {
         "lat": 43,
         "lon": -122,
@@ -51,7 +51,8 @@ for i in waypoints:
 
 for item in waypoints:
     print("="*30)
-    print(f'Name: {item["name"]} \nLatitude: {item["lat"]} \nLongitude: {item["lon"]}')
+    print(
+        f'Name: {item["name"]} \nLatitude: {item["lat"]} \nLongitude: {item["lon"]}')
     print("="*30)
 
 print(waypoints)

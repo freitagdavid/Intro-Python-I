@@ -6,8 +6,10 @@
 
 # YOUR CODE HERE
 
+
 def f1(n1, n2):
     return n1 + n2
+
 
 print(f1(1, 2))
 
@@ -15,7 +17,7 @@ print(f1(1, 2))
 # sum. Google for "python arbitrary arguments" and look for "*args"
 
 # YOUR CODE HERE
-    
+
 
 def f2(*args):
     return sum(args)
@@ -48,11 +50,13 @@ print(f2(*a))    # Should print 22
 
 # YOUR CODE HERE
 
+
 def f3(x, y=None):
     if y == None:
         return x + 1
     else:
         return x + y
+
 
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
@@ -71,6 +75,7 @@ print(f3(8))     # Should print 9
 def f4(**kwargs):
     for key, value in kwargs.items():
         print(f'key: {key}, value: {value}')
+
 
 # Should print
 # key: a, value: 12

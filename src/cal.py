@@ -24,14 +24,17 @@ import calendar
 from datetime import datetime
 date = datetime.now()
 
-def printCal(year = date.year, month = date.month):
-  print(calendar.TextCalendar(6).formatmonth(int(year), int(month), w=0, l=0))
+
+def printCal(year=date.year, month=date.month):
+    print(calendar.TextCalendar(6).formatmonth(
+        int(year), int(month), w=0, l=0))
+
 
 if len(sys.argv) == 1:
-  printCal()
+    printCal()
 elif len(sys.argv) == 2:
-  printCal(month=sys.argv[1])
+    printCal(month=sys.argv[1])
 elif len(sys.argv) == 3:
-  printCal(sys.argv[2], sys.argv[1])
+    printCal(sys.argv[2], sys.argv[1])
 else:
-  print('Usage: calendar.py month [year]')
+    print('Usage: calendar.py month [year]')

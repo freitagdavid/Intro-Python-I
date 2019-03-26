@@ -2,11 +2,13 @@
 
 # YOUR CODE HERE
 
+
 def is_even(num):
     if num % 2 == 0:
         return True
     else:
         return False
+
 
 # Read a number from the keyboard
 num = input("Enter a number: ")
